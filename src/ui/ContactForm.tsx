@@ -99,6 +99,9 @@ export default function ContactForm() {
           Message was successfully sent
         </p>
       )}
+      {state.isError && state.errors.request && (
+        <ErrorText>{state.errors.request[0]}</ErrorText>
+      )}
     </form>
   );
 }

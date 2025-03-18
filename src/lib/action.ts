@@ -21,7 +21,6 @@ export async function sendMessage(
       Object.fromEntries(formData)
     );
     const sendMessageRes = res.data;
-    console.log(sendMessageRes);
     if (!sendMessageRes.success)
       return {
         isSuccess: false,
@@ -36,7 +35,7 @@ export async function sendMessage(
   } catch (error) {
     console.error(error);
     return {
-      isSuccess: true,
+      isSuccess: false,
       isError: true,
       errors: {
         request: ["An error uccoured"],

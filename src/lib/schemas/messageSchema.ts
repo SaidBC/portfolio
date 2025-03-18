@@ -31,7 +31,7 @@ const messageSchema = z.object({
       message: "Message min is 10 characters",
     })
     .max(250, {
-      message: "Message max is 10 characters",
+      message: "Message max is 250 characters",
     }),
 });
 
