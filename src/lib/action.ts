@@ -16,7 +16,6 @@ export async function sendMessage(
   formData: FormData
 ): Promise<formState> {
   try {
-    console.log(clientEnv);
     const res = await axios.post<sendMessageResponse>(
       clientEnv.NEXT_PUBLIC_API_URL + "/messages",
       Object.fromEntries(formData)

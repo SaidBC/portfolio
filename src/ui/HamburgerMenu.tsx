@@ -8,7 +8,6 @@ import XmarkIcon from "./XmarkIcon";
 export default function HamburgerMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleToggleMenu = useCallback(() => {
-    console.log("clicked");
     setIsMenuOpen(!isMenuOpen);
   }, [isMenuOpen]);
   return (
