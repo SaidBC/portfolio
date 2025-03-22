@@ -3,7 +3,7 @@ import Media from "./Media";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#202020] rounded-t-[5rem] pt-10 pb-6">
+    <footer className="w-full bg-[#202020] rounded-t-[5rem] pt-10 pb-6 text-sm sm:text-base">
       <div className="grid grid-cols-12 max-w-5xl mx-auto gap-8 md:gap-4">
         <div className="col-span-12 md:col-span-6 grid grid-cols-12  gap-4">
           <div className="col-start-3 md:col-start-5 col-span-12">
